@@ -22,7 +22,7 @@ conn = mongo_connect(MONGO_URI)
 
 coll = conn[DATABASE][COLLECTION]
 
-# adding single data 
+# adding single data
 # new_doc = {"first": "douglas", "last": "adams", "dob": "11/02/1952", "hair_color": "grey", "occupation": "writer", "nationality": "british"}
 
 # coll.insert_one(new_doc)
@@ -49,9 +49,7 @@ coll = conn[DATABASE][COLLECTION]
 
 # coll.insert_many(new_docs)
 
-coll.remove({"first": "douglas"})
 
-documents = coll.find()
 
 for doc in documents:
     print(doc)
